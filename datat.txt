@@ -1,0 +1,311 @@
+Passport Photo
+Untitled.jpg
+
+Full Name
+
+Aniruddh Chaturvedi
+
+Gender
+
+MALE
+
+Date of Birth
+
+Sep 13, 2005
+
+Category
+
+GENERAL
+
+Mobile
+
+9617766116
+
+WhatsApp
+
+9617766116
+
+Personal Email
+
+callaniruddhji@gmail.com
+
+College Email
+
+aniruddhchaturvedi230937@acropolis.in
+
+Clubs
+IEEE
+
+Hobbies
+GAMINGWATCHING_CINEMA
+
+RGPV Enrollment No
+
+0827CI231016
+
+Institute Enrollment No
+
+AITR23-0937
+
+Course
+
+B TECH
+
+Branch
+
+CSIT
+
+Batch Year
+
+2027
+
+Section
+
+1
+Section B: Documents & ID Proof
+
+Aadhar Card
+
+2508 1525 1238
+Section C: Family Details
+Father's Details
+
+Name
+
+Manav Chaturvedi
+
+Mobile
+
+7477093901
+
+Occupation
+
+BUSINESS
+
+Designation
+
+Owner
+
+Organization
+
+Gauri Enterprise
+Mother's Details
+
+Name
+
+Mrinal Chaturvedi
+
+Mobile
+
+9174084969
+
+Occupation
+
+HOMEMAKER
+Family Information
+
+Family Status
+
+JOINT
+
+Brothers
+
+1
+
+Sisters
+
+0
+
+Annual Income
+
+More than ₹10 Lakhs
+Section D: Address
+Current Address
+
+Address
+
+A-1101, Elite Apex, Mahalaxmi Nagar
+
+City
+
+Indore
+
+State
+
+Madhya Pradesh
+
+Permanent address is same as current address
+Section E: Academic Record
+10th Standard
+
+Board
+
+CBSE
+
+School Name
+
+Advanced Academy
+
+Percentage
+
+76.8%
+
+Year of Passing
+
+2020
+12th Standard
+
+Board
+
+CBSE
+
+School Name
+
+Rankers International School
+
+Percentage
+
+62.0%
+
+Year of Passing
+
+2023
+Current Academic Performance
+
+Current CGPA
+
+6.93
+
+Active Backlogs
+
+0
+
+History Backlogs
+
+1
+
+Study Gap
+
+0 years
+Semester-wise SGPA
+
+Sem 1
+
+6.1
+
+Sem 2
+
+6.71
+
+Sem 3
+
+7.38
+
+Sem 4
+
+7.38
+Section F: Professional Profile
+
+Career Preference
+
+PLACEMENT
+
+Primary Domain
+
+SOFTWARE DEVELOPER
+
+Secondary Domain
+
+EMBEDDED SYSTEMS ENGINEER
+
+Open to Relocation
+
+Yes
+
+Preferred Locations
+Remote
+
+Skills
+CGitHubContinuous ImprovementAdaptabilityEmpathyFlexibilitySelf-AwarenessFunctional ProgrammingMySQLObject-Oriented ProgrammingPythonJavaC++Work EthicShell ScriptingData StructuresProblem SolvingEnglish FluencyQuality FocusBashGitAlgorithmsLinuxWritten CommunicationCuriosityEmotional Intelligence
+
+Resume
+Section G: Certifications
+
+The Joy of Computing using Python
+https://archive.nptel.ac.in/content/noc/NOC25/SEM1/Ecertificates/106/noc25-cs69/Course/NPTEL25CS69S104720060904308006.pdf
+
+NPTEL
+
+May 20, 2025
+View
+
+Introduction to Algorithms and Analysis
+https://archive.nptel.ac.in/content/noc/NOC25/SEM2/Ecertificates/106/noc25-cs150/Course/NPTEL25CS150S125840047710430035.pdf
+
+NPTEL
+
+Nov 9, 2025
+View
+
+Data Structure and Algorithms using Java
+https://archive.nptel.ac.in/content/noc/NOC25/SEM2/Ecertificates/106/noc25-cs148/Course/NPTEL25CS148S105840065110430035.pdf
+
+NPTEL
+
+Nov 11, 2025
+View
+
+Data Base Management System
+https://archive.nptel.ac.in/content/noc/NOC25/SEM2/Ecertificates/106/noc25-cs145/Course/NPTEL25CS145S53720042909167406.pdf
+
+NPTEL
+
+Sep 27, 2025
+View
+
+Programming in Java
+https://archive.nptel.ac.in/content/noc/NOC25/SEM1/Ecertificates/106/noc25-cs57/Course/NPTEL25CS57S114720024304308006.pdf
+
+NPTEL
+
+May 23, 2025
+View
+
+Fundamentals of Object Oriented Programming
+https://archive.nptel.ac.in/content/noc/NOC25/SEM1/Ecertificates/106/noc25-cs58/Course/NPTEL25CS58S34720016604308006.pdf
+
+NPTEL
+
+May 8, 2025
+View
+
+Programming in Modern C++
+https://archive.nptel.ac.in/content/noc/NOC25/SEM1/Ecertificates/106/noc25-cs58/Course/NPTEL25CS58S34720016604308006.pdf
+
+NPTEL
+
+May 12, 2025
+View
+
+Google Cloud Career Launchpad Cloud Engineer track
+https://drive.google.com/file/d/16H9jU7JqduX-uvF4sRuawxN3tirxMj34/view?usp=sharing
+
+Google Cloud
+
+Dec 14, 2025
+View
+
+Getting Started with Cisco Packet Tracer
+https://drive.google.com/file/d/1g0YrLKRguTzLArXZbx1k21Ja2ynKliTo/view?usp=sharing
+
+Cisco Networking Academy
+
+Aug 18, 2025
+View
+
+Introduction to Cybersecurity
+https://drive.google.com/file/d/1HXam3h4H2XhUDs9vxG3_NK0ndj92wb2k/view?usp=sharing
+
+Cisco Networking Academy
+
+Aug 10, 2025
