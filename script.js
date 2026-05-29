@@ -1,21 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Mobile Menu Toggle
+    // ===== Mobile Menu =====
     const mobileBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
     const menuIcon = mobileBtn.querySelector('i');
 
     mobileBtn.addEventListener('click', () => {
         navLinks.classList.toggle('active');
-        if (navLinks.classList.contains('active')) {
-            menuIcon.classList.remove('ph-list');
-            menuIcon.classList.add('ph-x');
-        } else {
-            menuIcon.classList.remove('ph-x');
-            menuIcon.classList.add('ph-list');
-        }
+        menuIcon.classList.toggle('ph-list');
+        menuIcon.classList.toggle('ph-x');
     });
 
-    // Close menu when a link is clicked
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
             navLinks.classList.remove('active');
@@ -24,51 +18,104 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 2. Navbar Scroll Effect
+    // ===== Navbar Scroll Effect =====
     const navbar = document.querySelector('.navbar');
+    let lastScroll = 0;
+
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
+        const currentScroll = window.scrollY;
+        if (currentScroll > 50) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
         }
-    });
+        lastScroll = currentScroll;
+    }, { passive: true });
 
-    // 3. Scroll Reveal Animations
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.15
-    };
-
-    const observer = new IntersectionObserver((entries, observer) => {
+    // ===== Scroll Reveal with IntersectionObserver =====
+    const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('show');
-                observer.unobserve(entry.target); // Stop observing once revealed
+                observer.unobserve(entry.target);
             }
         });
-    }, observerOptions);
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
-    const hiddenElements = document.querySelectorAll('.hidden');
-    hiddenElements.forEach(el => observer.observe(el));
+    document.querySelectorAll('.hidden').forEach(el => observer.observe(el));
 
-    // 4. Typewriter Effect (Optional Enhancement)
-    const typeWriterElement = document.querySelector('.typewriter');
-    if (typeWriterElement) {
-        const text = typeWriterElement.textContent;
-        typeWriterElement.textContent = '';
-        let i = 0;
-        
-        function typeWriter() {
-            if (i < text.length) {
-                typeWriterElement.textContent += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, 50); // Typing speed
+    // ===== Typewriter Effect =====
+    const typeEl = document.querySelector('.typewriter');
+    if (typeEl) {
+        const phrases = [
+            'Software Engineer & IoT Developer',
+            'Systems Programming Enthusiast',
+            'MERN Stack Developer',
+        ];
+        let phraseIdx = 0;
+        let charIdx = 0;
+        let deleting = false;
+        let pauseEnd = 0;
+
+        function tick() {
+            const now = Date.now();
+            if (now < pauseEnd) {
+                requestAnimationFrame(tick);
+                return;
             }
+
+            const current = phrases[phraseIdx];
+
+            if (!deleting) {
+                typeEl.textContent = current.substring(0, charIdx + 1);
+                charIdx++;
+                if (charIdx === current.length) {
+                    deleting = true;
+                    pauseEnd = now + 2000;
+                }
+            } else {
+                typeEl.textContent = current.substring(0, charIdx - 1);
+                charIdx--;
+                if (charIdx === 0) {
+                    deleting = false;
+                    phraseIdx = (phraseIdx + 1) % phrases.length;
+                }
+            }
+
+            const speed = deleting ? 30 : 60;
+            setTimeout(() => requestAnimationFrame(tick), speed);
         }
-        
-        // Start typing effect slightly after page load
-        setTimeout(typeWriter, 500);
+
+        typeEl.textContent = '';
+        setTimeout(() => requestAnimationFrame(tick), 800);
+    }
+
+    // ===== Active Nav Link Highlighting =====
+    const sections = document.querySelectorAll('section[id]');
+    const navItems = document.querySelectorAll('.nav-links a');
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                navItems.forEach(a => {
+                    a.style.color = '';
+                    if (a.getAttribute('href') === '#' + entry.target.id) {
+                        a.style.color = 'var(--text-primary)';
+                    }
+                });
+            }
+        });
+    }, { threshold: 0.3 });
+
+    sections.forEach(section => sectionObserver.observe(section));
+
+    // ===== Smooth Parallax on Hero Image =====
+    const heroImage = document.querySelector('.image-wrapper');
+    if (heroImage && window.innerWidth > 768) {
+        window.addEventListener('mousemove', (e) => {
+            const x = (e.clientX / window.innerWidth - 0.5) * 12;
+            const y = (e.clientY / window.innerHeight - 0.5) * 12;
+            heroImage.style.transform = `translate(${x}px, ${y}px)`;
+        }, { passive: true });
     }
 });
